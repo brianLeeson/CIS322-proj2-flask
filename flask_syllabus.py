@@ -41,6 +41,7 @@ def index():
       app.logger.debug("Processing raw schedule file")
       raw = open(CONFIG.schedule)
       flask.session['schedule'] = pre.process(raw)
+	  raw.close()
 
   return flask.render_template('syllabus.html')
 
