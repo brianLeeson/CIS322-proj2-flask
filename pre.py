@@ -17,7 +17,7 @@ def process(raw):
     cooked = [ ] 
     for line in raw:
         line = line.strip()
-        if len(line) == 0 or line[0]=="#" :
+        if len(line) == 0 or line[0]=="#" : #skips blanks and comments
             continue
         parts = line.split(':')
         if len(parts) == 1 and field:
@@ -60,12 +60,8 @@ def process(raw):
 def main():
     f = open("data/schedule.txt")
     parsed = process(f)
+	f.close()
     print(parsed)
 
 if __name__ == "__main__":
     main()
-
-    
-    
-            
-    
