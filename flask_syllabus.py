@@ -42,6 +42,9 @@ def index():
       raw = open(CONFIG.schedule)
       flask.session['schedule'] = pre.process(raw)
 	  raw.close()
+	  
+	  print("flask.session")
+	  print(flask.session)
 
   return flask.render_template('syllabus.html')
 
