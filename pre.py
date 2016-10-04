@@ -60,7 +60,7 @@ def process(raw):
 def main():
     f = open("data/schedule.txt")
     parsed = process(f)
-	f.close()
+    f.close()
     print(parsed)
 
 if __name__ == "__main__":
