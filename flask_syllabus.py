@@ -41,11 +41,11 @@ def index():
       app.logger.debug("Processing raw schedule file")
       raw = open(CONFIG.schedule)
       flask.session['schedule'] = pre.process(raw)
-	  raw.close()
+      raw.close()
 	  
-	  print("flask.session")
-	  print(flask.session)
-
+      print("flask.session")
+      print(flask.session)
+	  
   return flask.render_template('syllabus.html')
 
 
