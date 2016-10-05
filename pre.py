@@ -44,6 +44,7 @@ def process(raw):
             entry['topic'] = ""
             entry['project'] = ""
             entry['week'] = content
+			entry['date'] = base
 
         elif field == 'topic' or field == 'project':
             entry[field] = content
