@@ -44,7 +44,8 @@ tr.even {
 }
 
 .class-schedule .date{
-
+	column-width: 30em;
+	text-align: center;
 }
 
 .class-schedule .project {
