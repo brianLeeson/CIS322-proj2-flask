@@ -43,6 +43,11 @@ tr.even {
     /* leave as default */
 }
 
+.class-schedule .date{
+    padding-left: 3ex;
+    padding-right: 3ex;
+}
+
 .class-schedule .project {
     border-left-style: solid;
     border-left-width: 1px;
