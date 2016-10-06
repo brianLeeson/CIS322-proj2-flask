@@ -1,3 +1,5 @@
+Author: Brian Leeson
+
 # proj2-flask
 
 Instructions for use:
