@@ -27,7 +27,7 @@ tr.odd {
 
 tr.even {
     /* A little lighter */ 
-    background-color: rgb(224,213,179);
+    /*background-color: rgb(224,213,179);*/
 }
 
 .class-schedule .week {
