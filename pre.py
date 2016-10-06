@@ -53,9 +53,9 @@ def process(raw):
 			week_finish = week_start.replace(weeks =+ 1)
 			
 			if (week_start < today) and (today < week_finish):			
-				entry['highlight'] = True
-			else:
 				entry['highlight'] = False
+			else:
+				entry['highlight'] = True
 			
 		elif field == 'topic' or field == 'project':
 			entry[field] = content
