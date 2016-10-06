@@ -44,11 +44,12 @@ def process(raw):
 			entry['topic'] = ""
 			entry['project'] = ""
 			entry['week'] = content
-			#The following line 
+			
+			#The following line determines what the date should be for that week.
 			week_start = (base.replace(weeks =+ int(entry['week']) - 1))
 			entry['date'] = week_start.format('MM/DD/YYYY')
 			
-			# I don't know if this goes here.
+			#Check week. If current week then set highlight to true.
 			today = arrow.utcnow()
 			week_finish = week_start.replace(weeks =+ 1)
 			

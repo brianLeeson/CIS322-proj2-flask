@@ -2,7 +2,7 @@
 #  Sample schedule for CIS 322, Winter 2016. 
 #  You can use this as a model to create a schedule
 #  for another class, and use the configuration file 
-# to reference it.   
+#  to reference it.   
 #
 #
 begin:  09/27/2016

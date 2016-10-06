@@ -37,9 +37,7 @@ import CONFIG
 @app.route("/schedule")
 def index():
   app.logger.debug("Main page entry")
-  #print("flask.session")
-  #print(flask.session)
-  if 'schedule': #not in flask.session:      #TODO. Undo fix to process raw everytime.
+  if 'schedule' not in flask.session:
       app.logger.debug("Processing raw schedule file")
       raw = open(CONFIG.schedule)
       flask.session['schedule'] = pre.process(raw)
