@@ -50,11 +50,9 @@ def process(raw):
 			
 			# I don't know if this goes here.
 			today = arrow.utcnow()
-			week_end = week_start.replace(weeks =+ 1)
-			#print(current_week)
-			#print(week_date)
-			#print(current_week > week_date)
-			if (week_start < today) and (today < week_end):			
+			week_finish = week_start.replace(weeks =+ 1)
+			
+			if (week_start < today) and (today < week_finish):			
 				entry['highlight'] = True
 			else:
 				entry['highlight'] = False

@@ -13,7 +13,7 @@
 
 <table class="class-schedule">
   {% for entry in session.schedule %}
-  {% if entry.highlight is divisibleby 2 %}
+  {% if entry.highlight is True %}
   <tr class="hdate">
   {% elif loop.index is divisibleby 2 %}
   <tr class="even">
