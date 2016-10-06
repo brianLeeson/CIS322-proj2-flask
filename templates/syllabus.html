@@ -19,7 +19,14 @@
   <tr class="odd">
   {% endif %}	   
     <td class="week">{{ entry.week }}</td>
+	
+	<!-- logic to check dictionay. make highlight class here. -->
+	{% if entry.highlight is True %}
+	<td class="h-date">{{ entry.date }}</td> <!-- date column added -->
+	{% else %}
 	<td class="date">{{ entry.date }}</td> <!-- date column added -->
+	{% endif %}	
+	
     <td class="topic">{{ entry.topic }}</td>
     <td class="project">{{ entry.project}}</td>
   </tr>
