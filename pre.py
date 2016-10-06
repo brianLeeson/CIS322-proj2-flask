@@ -55,9 +55,9 @@ def process(raw):
 			#print(week_date)
 			#print(current_week > week_date)
 			if (week_start < today) and (today < week_end):			
-				entry['highlight'] = 2
+				entry['highlight'] = True
 			else:
-				entry['highlight'] = 1
+				entry['highlight'] = False
 			
 		elif field == 'topic' or field == 'project':
 			entry[field] = content

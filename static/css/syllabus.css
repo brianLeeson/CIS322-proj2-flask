@@ -31,8 +31,8 @@ tr.even {
 }
 
 tr.hdate {
-    /* Aqua */ 
-    background-color = rgb(255,255,0);
+    /* Highlight */ 
+    background-color : rgb(255,255,0);
 }
 
 .class-schedule .week {
