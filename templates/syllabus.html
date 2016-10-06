@@ -21,7 +21,7 @@
     <td class="week">{{ entry.week }}</td>
 	
 	<!-- logic to check dictionay. make highlight class here. -->
-	{% if entry.highlight is True %}
+	{% if entry.highlight is divisibleby 2 %}
 	<td class="h-date">{{ entry.date }}</td> <!-- date column added -->
 	{% else %}
 	<td class="date">{{ entry.date }}</td> <!-- date column added -->
