@@ -13,20 +13,15 @@
 
 <table class="class-schedule">
   {% for entry in session.schedule %}
-  {% if loop.index is divisibleby 2 %}
+  {% if entry.highlight is divisibleby 2 %}
+  <tr class="h-date">
+  {% elif loop.index is divisibleby 2 %}
   <tr class="even">
   {% else %}
   <tr class="odd">
   {% endif %}	   
     <td class="week">{{ entry.week }}</td>
-	
-	<!-- logic to check dictionay. make highlight class here. -->
-	{% if entry.highlight is divisibleby 2 %}
-	<td class="h-date">{{ entry.date }}</td> <!-- date column added -->
-	{% else %}
 	<td class="date">{{ entry.date }}</td> <!-- date column added -->
-	{% endif %}	
-	
     <td class="topic">{{ entry.topic }}</td>
     <td class="project">{{ entry.project}}</td>
   </tr>
