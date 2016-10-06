@@ -44,7 +44,19 @@ def process(raw):
             entry['topic'] = ""
             entry['project'] = ""
             entry['week'] = content
-            entry['date'] = (base.replace(weeks =+ int(entry['week']) - 1)).format('MM/DD/YYYY')
+			#The following line 
+			week_date = (base.replace(weeks =+ int(entry['week']) - 1))
+            entry['date'] = week_date.format('MM/DD/YYYY')
+			
+			# I don't know if this goes here.
+			current_time = arrow.utcnow()
+			print(current_time)
+			print(week_date)
+			print(current_time > week_date)
+			
+			# want to say
+			#if current_time > week_date:
+			#	highlight week
 
         elif field == 'topic' or field == 'project':
             entry[field] = content
