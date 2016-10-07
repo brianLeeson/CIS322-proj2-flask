@@ -73,7 +73,7 @@ def main():
 	f = open("data/schedule.txt")
 	parsed = process(f)
 	f.close()
-	print(parsed)
+	
 
 if __name__ == "__main__":
 	main()
