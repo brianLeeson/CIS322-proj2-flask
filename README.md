@@ -1,28 +1,21 @@
-Author: Brian Leeson
+AUTHOR: Brian Leeson, bel@cs.uoregon.edu
+ 
+APPLICATION SPECIFICS
+This applications turns a class syllabus text file into a formatted webpage with the dates displayed for each week. 
+If the user is viewing the wepage during the term the current week will be highlighted.
 
-# proj2-flask
+RUNNING THE APPLICATION
+Do NOT enter the virtual enviroment.
 
-Instructions for use:
-## In your workspace
+Deployment should work "out of the box" with this command sequence:
+sudo apt-get install python3-venv
+git clone <gitURL>
+cd to the cloned repository
+make configure
+make run
 
-Make sure pyvenv is installed.
-
-'bash ./configure' should create appropriate configuration files on
-most Unix files.   If you are using Windows, some additional editing
-of configuration files may be necessary.  You might have to edit the
-Makefile to find the right version of 
-pyvenv.
-
-If you can run flask applications in your development environment, the
-application would might be run by
-`   python3 syllabus.py`
-and then reached with url
-`   http://localhost:5000`
-
-`make run` will launch the debugging server built into flask.  It
-provides the best support for tracking down bugs in your server, but
-it's not suitable for use by many users or over a long period.  `make
-service` starts a Green Unicorn (gunicorn) server; you may note the extra
-lime sparkles all around you.  Green Unicorn can be used for servers
-that run over a longer period (e.g., if you want to leave a web
-service running on your Pi).   
+The default port is 5000. If your are on your own machine connect at localhost:5000. 
+If the server is running another machine connect at <OtherMachineIP>:5000.
+ 
+TESTING THE APPLICAITON
+Test this server by following the RUNNING instructions and attempt to connect to the server.
